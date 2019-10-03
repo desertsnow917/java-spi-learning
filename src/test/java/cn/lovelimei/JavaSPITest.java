@@ -15,6 +15,8 @@ public class JavaSPITest {
      */
     @Test
     public void sayHello() throws Exception {
+        ///
+        // OK
         ServiceLoader<Robot> serviceLoader = ServiceLoader.load(Robot.class);
         System.out.println("Java SPI");
         serviceLoader.forEach(Robot::sayHello);
